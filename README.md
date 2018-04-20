@@ -26,7 +26,11 @@ My pipeline consists of following steps-
 5. Hough Trasform
 6. Weight combination transformed image with original image.
 
-The crux of the project was draw_lines function that was responsible for segregating left and right lane lines.I approached through the observation that the slope of the left and right lines had opposite signs in absence of curvature(as was the case here), thus making it possible for me to segregate the points forming lines into left and right bins.Once segregated , elementary geometry allowed me to sketch a straight line with average slope through extreme points.
+The crux of the project was draw_lines function that was responsible for segregating left and right lane lines.I approached through the observation that the slope of the left and right lines had opposite signs in absence of curvature(as was the case here), thus making it possible for me to segregate the points forming lines into left and right bins.
+
+Also, a threshold value of slope was decided to filter out any absurdity in lane detection. 
+
+Once segregated , elementary geometry allowed me to sketch a straight line with average slope through extreme points.
 
 Here are some examples of output images-  
 
